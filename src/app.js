@@ -13,7 +13,7 @@ app.get('/api', (req, res) => {
     const utc_time = new Date(currentDate.getTime() + 2000);
     const github_file_url = 'https://github.com/HayatsCodes/zuri-stage1-api/blob/main/src/app.js';
     const github_repo_url = 'https://github.com/HayatsCodes/zuri-stage1-api';
-    const status_code = 200;
+    const status_code = '200';
 
     res.status(200).json(
         {
