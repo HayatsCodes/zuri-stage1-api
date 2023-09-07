@@ -10,7 +10,7 @@ app.get('/api', (req, res) => {
 
     const {slack_name, track} = req.query;
     const current_day = daysOfWeek[currentDate.getDay()];
-    const utc_time = currentDate.toISOString();
+    const utc_time = `${currentDate.toISOString().split('.')[0]}Z`;
     const github_file_url = 'https://github.com/HayatsCodes/zuri-stage1-api/blob/main/src/app.js';
     const github_repo_url = 'https://github.com/HayatsCodes/zuri-stage1-api';
     const status_code = '200';
